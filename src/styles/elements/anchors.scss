@@ -1,0 +1,14 @@
+//* Anchors
+
+a {
+	text-decoration-color: var(--light-b);
+
+	color: var(--dark-d);
+
+	transition: 0.1s ease-in-out;
+
+	&:hover {
+		color: var(--dark-c) !important;
+		text-decoration-color: rgba(var(--brand-a-rgb), 1) !important;
+	}
+}

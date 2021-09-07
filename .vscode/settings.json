@@ -1,0 +1,36 @@
+{
+	// allow formatting .svg and .xml with prettier
+	"files.associations": {
+		"*.xml": "html",
+		"*.svg": "html"
+	},
+
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+
+	"editor.formatOnSave": true,
+	"editor.codeActionsOnSave": {
+		"source.fixAll.stylelint": true
+	},
+
+	"[svelte]": {
+		"editor.defaultFormatter": "svelte.svelte-vscode"
+	},
+
+	"workbench.iconTheme": "material-icon-theme",
+
+	"editor.tokenColorCustomizations": {
+		"textMateRules": [
+			{
+				"scope": [
+					"punctuation.definition.tag",
+					"entity.name.tag.svelte",
+					"punctuation.separator.key-value.svelte",
+					"constant.name.attribute.tag.pug"
+				],
+				"settings": {
+					"foreground": "#5a86ff36"
+				}
+			}
+		]
+	}
+}

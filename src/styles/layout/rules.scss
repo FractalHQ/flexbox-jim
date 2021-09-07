@@ -1,0 +1,8 @@
+// @use '../vendor/rfs';
+
+hr {
+	// @include rfs.margin-top(0.75rem);
+	border-color: var(--dark-d);
+	border-width: 1px 0 0 0;
+	border-style: solid;
+}

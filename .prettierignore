@@ -1,0 +1,9 @@
+.vercel_build_output/**
+node_modules/**
+.svelte-kit/**
+pnpm-lock.yaml
+src/app.html
+static/**
+build/**
+*.json
+*.scss

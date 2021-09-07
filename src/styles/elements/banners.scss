@@ -1,0 +1,23 @@
+@mixin base {
+	display: block;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 100%;
+	padding: 16px 0;
+
+	font-size: 0.9rem;
+	text-align: center;
+	text-align: center;
+
+	border-bottom: 1px solid var(--light-d);
+	background-color: var(--light-c);
+	gap: 4px;
+}
+
+banner,
+.banner {
+	@include base;
+}

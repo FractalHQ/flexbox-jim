@@ -1,0 +1,20 @@
+.btn {
+	padding: 0.5rem 1rem;
+
+	border-radius: 5px;
+	background-color: var(--dark-a);
+
+	cursor: pointer;
+	transition: background 0.25s;
+
+	& > a {
+		color: var(--light-a);
+	}
+
+	&:hover {
+		background: var(--brand-a);
+		& > a {
+			color: var(--light-a);
+		}
+	}
+}

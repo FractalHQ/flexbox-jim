@@ -1,0 +1,16 @@
+@mixin base {
+	display: flex;
+
+	&.wrap {
+		flex-wrap: wrap;
+	}
+}
+
+.row{
+	@include base;
+}
+
+.col {
+	@include base;
+	flex-direction: column;
+}

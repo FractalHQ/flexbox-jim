@@ -1,0 +1,10 @@
+{
+	"svelteSortOrder": "options-scripts-markup-styles",
+	"jsxBracketSameLine": true,
+	"trailingComma": "none",
+	"singleQuote": true,
+	"printWidth": 140,
+	"useTabs": true,
+	"tabWidth": 4,
+	"semi": false
+}
