@@ -17,6 +17,7 @@
 	import { lintKeymap } from '@codemirror/lint'
 	import { css } from '@codemirror/lang-css'
 	import { onMount } from 'svelte'
+	import { code } from './stores/code'
 
 	const config = [
 		// lineNumbers(),
@@ -52,8 +53,17 @@
 	onMount(() => {
 		editor = new EditorView({
 			state: EditorState.create({
-				doc: `display: flex;\nflex-direction: `,
-				extensions: [config, css()]
+				doc: `display: flex;\n`,
+				extensions: [
+					config,
+					css(),
+					EditorView.updateListener.of((e) => {
+						if (e.docChanged) {
+							console.log(e)
+							$code = e.state.doc.toString().replace('display: flex;\n', '')
+						}
+					})
+				]
 			}),
 			parent
 		})
@@ -69,10 +79,8 @@
 
 <style lang="scss">
 	.card {
-		// display: flex;
-
-		width: 800px;
-		height: 500px;
+		max-width: 800px;
+		height: max-content;
 
 		padding: 2rem;
 

@@ -1,12 +1,14 @@
 <script>
 	import JimsWorld from '$lib/JimsWorld.svelte'
 	import Editor from '$lib/Editor.svelte'
+	import { code } from '$lib/stores/code'
 	import { onMount } from 'svelte'
 </script>
 
 <template lang="pug">
 
 	h1 flexbox Jim
+		pre {$code}
 
 	.container
 		Editor
