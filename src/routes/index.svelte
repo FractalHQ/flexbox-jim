@@ -8,7 +8,6 @@
 <template lang="pug">
 
 	h1 flexbox Jim
-		pre {$code}
 
 	.container
 		Editor
@@ -19,10 +18,12 @@
 <!-- REPL -->
 <style lang="scss">
 	h1 {
-		font-size: 2em;
+		padding-top: 2rem;
+
+		font-family: var(--font-secondary);
+		font-size: 3rem;
 
 		text-transform: uppercase;
-		font-family: var(--font-secondary);
 	}
 
 	.container {

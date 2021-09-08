@@ -38,8 +38,8 @@ body {
 	min-height: 100vh;
 	margin: 0;
 
-	background-color: var(--light-a);
-	background: linear-gradient(180deg, var(--brand-a) 50%, var(--brand-b) 94%, rgb(0, 140, 86) 95%);
+	background-color: var(--brand-a);
+	/* background: linear-gradient(180deg, var(--brand-a) 50%, var(--brand-b) 94%, rgb(0, 140, 86) 95%); */
 	color: var(--light-a);
 
 	transition: color 0.5s background 0.3s background-color 0.3s;

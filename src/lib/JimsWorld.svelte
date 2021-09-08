@@ -60,7 +60,7 @@
 		min-height: var(--stage-size);
 		max-height: var(--stage-size);
 
-		background: rgba(var(--light-a-rgb), 0.75);
+		border: 5px solid rgba(var(--light-a-rgb), 0.75);
 	}
 	.stage,
 	.jim-container,
@@ -96,7 +96,7 @@
 				width: var(--cell-size);
 				height: var(--cell-size);
 
-				border: 3px solid blue;
+				border: 3px solid var(--light-a);
 
 				border-radius: 100%;
 			}
